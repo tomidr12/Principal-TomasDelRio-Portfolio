@@ -1,38 +1,38 @@
 // FADE
-const fadeEl = document.querySelector('.fade');
+const fadeEl = document.querySelector(".fade");
 
 let hasScrolled = false;
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   if (!hasScrolled) {
-    fadeEl.style.opacity = '0.5';
+    fadeEl.style.opacity = "0.5";
     hasScrolled = true;
   }
 });
 
 // FILTERS
-const filtersEl = document.querySelector('.filters');
-const projectEl1 = document.querySelector('.project:nth-child(1)');
-const projectEl2 = document.querySelector('.project:nth-child(2)');
-const projectEl3 = document.querySelector('.project:nth-child(3)');
-const projectEl4 = document.querySelector('.project:nth-child(4)');
-const projectEl5 = document.querySelector('.project:nth-child(5)');
-const projectEl6 = document.querySelector('.project:nth-child(6)');
-const htmlEl = document.querySelector('html');
+const filtersEl = document.querySelector(".filters");
+const projectEl1 = document.querySelector(".project:nth-child(1)");
+const projectEl2 = document.querySelector(".project:nth-child(2)");
+const projectEl3 = document.querySelector(".project:nth-child(3)");
+const projectEl4 = document.querySelector(".project:nth-child(4)");
+const projectEl5 = document.querySelector(".project:nth-child(5)");
+const projectEl6 = document.querySelector(".project:nth-child(6)");
+const htmlEl = document.querySelector("html");
 
-filtersEl.addEventListener('click', e => {
+filtersEl.addEventListener("click", (e) => {
   // remove fade
-  fadeEl.style.opacity = '0';
+  fadeEl.style.opacity = "0";
 
   // make clicked button active
-/*   document.querySelector('.filter-btn--active').classList.remove('filter-btn--active');
+  /*   document.querySelector('.filter-btn--active').classList.remove('filter-btn--active');
   e.target.classList.add('filter-btn--active'); */
 
   // change image opacities
-  htmlEl.style.setProperty('--default-opacity', '0.4');
-  htmlEl.style.setProperty('--hover-opacity', '0.3');
+  htmlEl.style.setProperty("--default-opacity", "0.4");
+  htmlEl.style.setProperty("--hover-opacity", "0.3");
 
   // reorganize grid
-/*   if (filterText === 'All') {
+  /*   if (filterText === 'All') {
   const filterText = e.target.textContent;
 
     projectEl1.style.opacity = '1';

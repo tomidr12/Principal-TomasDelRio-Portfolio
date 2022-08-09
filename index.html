@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Web Developer Tomas del Rio, Let's Work Together"
+    />
+    <meta
+      name="keywords"
+      content="portfolio, tomas del rio, tomas, services, web developer, web designer, page, website, frontend, developer, home, css, html, javascript"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Web Developer Tomas del Rio, Let's Work Together">
-    <meta name="keywords"
-        content="portfolio, tomas del rio, tomas, services, web developer, web designer, page, website, frontend, developer, home, css, html, javascript">
+    <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png" />
 
-  <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
 
-  <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 
-  <script src="script.js" defer></script>
+    <title>Tomás Del Rio - My Portfolio</title>
+  </head>
 
-  <title>Tomás Del Rio - My Portfolio</title>
-</head>
+  <body>
+    <div class="color"></div>
 
-<body>
+    <header class="header">
+      <img src="./img/profile.jpg" alt="Tomas portrait" class="logo" />
+      <a href="mailto:tomasdelrio12@gmail.com" class="btn btn--contact"
+        >Contact me</a
+      >
+    </header>
 
-  <div class="color"></div>
+    <main class="main">
+      <section class="intro">
+        <h1 class="first-heading">Hello <span class="emoji">👋</span></h1>
+        <p class="text">
+          <span class="u-bold">I'm <span class="u-yellow">Tomás</span></span
+          >, <i>a full-stack developer</i>
+          <span class="text--second">based in Argentina.</span>
+        </p>
+      </section>
 
-  <header class="header">
-    <img src="./img/profile.jpg"
-      alt="Tomas portrait" class="logo">
-    <a href="mailto:tomasdelrio12@gmail.com" class="btn btn--contact">Contact me</a>
-  </header>
-
-  <main class="main">
-    <section class="intro">
-      <h1 class="first-heading">Hello <span class="emoji">👋</span></h1>
-      <p class="text"><span class="u-bold">I'm <span class="u-yellow">Tomás</span></span>, <i>a full-stack developer</i>
-        <span class="text--second">based in Argentina.</span>
-      </p>
-    </section>
-
-    <section class="work">
-      <div class="top">
-        <h2 class="second-heading">My work</h2>
-        <ul class="filters">
-<!--           <li class="filter-item">
+      <section class="work">
+        <div class="top">
+          <h2 class="second-heading">My work</h2>
+          <ul class="filters">
+            <!--           <li class="filter-item">
             <button class="filter-btn filter-btn--active">All</button>
           </li>
           <li class="filter-item">
@@ -56,124 +65,143 @@
           <li class="filter-item">
             <button class="filter-btn">Full stack</button>
           </li> -->
-          <li class="filter-item">
-            <p>You can see all the projects in my GitHub</p>
-          </li>
-        </ul>
-      </div>
+            <li class="filter-item">
+              <p>You can see all the projects in my GitHub</p>
+            </li>
+          </ul>
+        </div>
 
-      <section class="grid">
-        <div class="project">
-          <section class="project-info">
-            <h3 class="third-heading">My first Front-end project</h3>
-            <ul class="technologies">
-              <li class="technology">CSS</li>
-              <li class="technology">Bootstrap</li>
-              <li class="technology">SASS</li>
-            </ul>
-          </section>
-          <img src="./img/FPortfolio.png" alt="Project"
-            class="grid-img">
-        </div>
-        <div class="project">
-          <section class="project-info">
-            <h3 class="third-heading">Animated Card</h3>
-            <ul class="technologies">
-              <li class="technology">CSS</li>
-              <li class="technology">HTML</li>
-              <li class="technology">UI/UX</li>
-            </ul>
-          </section>
-          <img src="./img/animated-profilecard.png"
-            alt="Project" class="grid-img">
-        </div>
-        <div class="project">
-          <section class="project-info">
-            <h3 class="third-heading">Animated Code Menu</h3>
-            <ul class="technologies">
-              <li class="technology">CSS</li>
-              <li class="technology">HTML</li>
-              <li class="technology">JavaScript</li>
-            </ul>
-          </section>
-          <img src="./img/menu-animado.png" alt="Project"
-            class="grid-img">
-        </div>
-        <div class="project">
-          <section class="project-info">
-            <h3 class="third-heading">Coming Soon</h3>
-            <p class="description"></p>
-            <ul class="technologies">
-              <li class="technology"></li>
-              <li class="technology"></li>
-            </ul>
-          </section>
-          <img src="./img/comingsoon.gif" alt="Project"
-            class="grid-img">
-        </div>
-        <div class="project">
-          <section class="project-info">
-            <h3 class="third-heading">DelGo</h3>
-            <p class="description">Fast Food App Project</p>
-            <ul class="technologies">
-              <li class="technology">HTML</li>
-              <li class="technology">CSS</li>
-              <li class="technology">JavaScript</li>
-            </ul>
-          </section>
-          <img src="./img/delgo.png" alt="Project"
-            class="grid-img">
-        </div>
-        <div class="project">
-          <section class="project-info">
-            <h3 class="third-heading">Coming Soon</h3>
-            <p class="description"></p>
-            <ul class="technologies">
-              <li class="technology"></li>
-              <li class="technology"></li>
-            </ul>
-          </section>
-          <img src="./img/comingsoon.gif" alt="Project"
-            class="grid-img">
-        </div>
-        <div class="fade"></div>
+        <section class="grid">
+          <div class="project">
+            <section class="project-info">
+              <h3 class="third-heading">My first Front-end project</h3>
+              <ul class="technologies">
+                <li class="technology">CSS</li>
+                <li class="technology">Bootstrap</li>
+                <li class="technology">SASS</li>
+              </ul>
+            </section>
+            <img src="./img/FPortfolio.png" alt="Project" class="grid-img" />
+          </div>
+          <div class="project">
+            <section class="project-info">
+              <h3 class="third-heading">Animated Card</h3>
+              <ul class="technologies">
+                <li class="technology">CSS</li>
+                <li class="technology">HTML</li>
+                <li class="technology">UI/UX</li>
+              </ul>
+            </section>
+            <img
+              src="./img/animated-profilecard.png"
+              alt="Project"
+              class="grid-img"
+            />
+          </div>
+          <div class="project">
+            <section class="project-info">
+              <h3 class="third-heading">Animated Code Menu</h3>
+              <ul class="technologies">
+                <li class="technology">CSS</li>
+                <li class="technology">HTML</li>
+                <li class="technology">JavaScript</li>
+              </ul>
+            </section>
+            <img src="./img/menu-animado.png" alt="Project" class="grid-img" />
+          </div>
+          <div class="project">
+            <section class="project-info">
+              <h3 class="third-heading">Coming Soon</h3>
+              <p class="description"></p>
+              <ul class="technologies">
+                <li class="technology"></li>
+                <li class="technology"></li>
+              </ul>
+            </section>
+            <img src="./img/comingsoon.gif" alt="Project" class="grid-img" />
+          </div>
+          <div class="project">
+            <section class="project-info">
+              <h3 class="third-heading">DelGo</h3>
+              <p class="description">Fast Food App Project</p>
+              <ul class="technologies">
+                <li class="technology">HTML</li>
+                <li class="technology">CSS</li>
+                <li class="technology">JavaScript</li>
+              </ul>
+            </section>
+            <img src="./img/delgo.png" alt="Project" class="grid-img" />
+          </div>
+          <div class="project">
+            <section class="project-info">
+              <h3 class="third-heading">Coming Soon</h3>
+              <p class="description"></p>
+              <ul class="technologies">
+                <li class="technology"></li>
+                <li class="technology"></li>
+              </ul>
+            </section>
+            <img src="./img/comingsoon.gif" alt="Project" class="grid-img" />
+          </div>
+          <div class="fade"></div>
+        </section>
       </section>
-    </section>
 
-    <a href="/Tomas-delRio_CV.pdf" download class="btn btn--download">Download <span class="u-bolder">CV</span></a>
+      <a href="/Tomas-delRio_CV.pdf" download class="btn btn--download"
+        >Download <span class="u-bolder">CV</span></a
+      >
 
-    <ul class="links">
-      <li class="link-item">
-        <a href="https://www.linkedin.com/in/tom%C3%A1s-del-rio-989960231/" class="link" target="_blank">
-          <img class="link-img"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/72px-LinkedIn_icon_circle.svg.png?20210301220643"
-            alt="LinkedIn">
-        </a>
-      </li>
-      <li class="link-item">
-        <a href="https://github.com/tomidr12" class="link" target="_blank">
-          <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" width="20" height="20">
-            <defs>
-              <image width="32" height="32" id="img1"
-                href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IB2cksfwAAAEtQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////g5kLBwAAABl0Uk5TADB/v8//759vPyCvUNAQkIDgYMCw8ECgcJ20HzUAAACpSURBVHiczZLLEoMgDEV5GNuiBQoW+v9fWu2gCCaw7d2eM3pDwtgfhQs5wCilvIk190eF1QRVRnHmc423zCfhiQlT5hrjALz9BwBzCBYXhkN44QKofUaCg0uCowTfrrAmCQsppBJvUgg/HkienoquEHsdVUfoThk6wrJvgpoib9s3G2z3gh5U/sBqmCu3rIiK1XtHVocXV+P1RSiWGjHO9Mf4aLc4DFP5AoecDq2cFzzPAAAAAElFTkSuQmCC" />
-              <image width="32" height="31" id="img2"
-                href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAAAAXNSR0IB2cksfwAAASlQTFRFAAAAFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWg1IqAAAAAGN0Uk5TABRjpNLz/zGp+w+b/t5C8TMR39atnlwH6ME0MigCrjUY/F9n4xLiYvbh29zyFtBendEEWY8N9asZl4o/wvqqZQM5aB73c8kBsH44ITw+xLkQekYVbx/DdWB4CLdk6usM2ux0Vi2hMAAAAY1JREFUeJxtkmdDwjAQho8CsVYQoUDZFhEHIKAsUREHWnEg7oEK+P9/hMml1A7uA3d9nzdHLgmAES7B7fES4vW4BRc4Y0FcJEYsigs2LC35iCV8S5JluZ84wm9qshxwckICyzO+MpdTxwrnwRD9kMMWVyAs099QEA0RpkRBEWJ0xHicjhoTFIgyNcJ4Apck2SipNBPSKTZAEuUErTJYrdrPZRXlDICaxWrNblhDOatCDov1vN2Q30CQAxHzpvPsNxGIIGMnyWmQ8L9l2GJp28kBthnZAmxUmGcoIuKG0jxDiRt42nHyHX1pGXPFaaggKEMV8+6ene/tIqhCjV9f3W6oc70GjSavWqoZ77e42mwAtAk5ODwipHPcTZxg89OzTEd/F236fd4jvgvlEu9OYwbtyng3vXMm9Gl1fcPu5pb3vzMMfb7fASH3MBQeHk+44WnGB/psKj3UZ9MOhzovGvt+KRDy+vb+8WkxFF7+1+RHKA3NhpHlDWlf31bDT1ezndz4YjJVeKlMJ7/jmf4H0HIrIWAwTZgAAAAASUVORK5CYII=" />
-            </defs>
-            <style>
-            </style>
-            <use id="Layer 1" href="#img1" x="0" y="0" />
-            <use id="Background" href="#img2" x="0" y="0" />
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </main>
+      <ul class="links">
+        <li class="link-item">
+          <a
+            href="https://www.linkedin.com/in/tom%C3%A1s-del-rio-989960231/"
+            class="link"
+            target="_blank"
+          >
+            <img
+              class="link-img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/72px-LinkedIn_icon_circle.svg.png?20210301220643"
+              alt="LinkedIn"
+            />
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="https://github.com/tomidr12" class="link" target="_blank">
+            <svg
+              version="1.2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 32 32"
+              width="20"
+              height="20"
+            >
+              <defs>
+                <image
+                  width="32"
+                  height="32"
+                  id="img1"
+                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IB2cksfwAAAEtQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////g5kLBwAAABl0Uk5TADB/v8//759vPyCvUNAQkIDgYMCw8ECgcJ20HzUAAACpSURBVHiczZLLEoMgDEV5GNuiBQoW+v9fWu2gCCaw7d2eM3pDwtgfhQs5wCilvIk190eF1QRVRnHmc423zCfhiQlT5hrjALz9BwBzCBYXhkN44QKofUaCg0uCowTfrrAmCQsppBJvUgg/HkienoquEHsdVUfoThk6wrJvgpoib9s3G2z3gh5U/sBqmCu3rIiK1XtHVocXV+P1RSiWGjHO9Mf4aLc4DFP5AoecDq2cFzzPAAAAAElFTkSuQmCC"
+                />
+                <image
+                  width="32"
+                  height="31"
+                  id="img2"
+                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAAAAXNSR0IB2cksfwAAASlQTFRFAAAAFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWg1IqAAAAAGN0Uk5TABRjpNLz/zGp+w+b/t5C8TMR39atnlwH6ME0MigCrjUY/F9n4xLiYvbh29zyFtBendEEWY8N9asZl4o/wvqqZQM5aB73c8kBsH44ITw+xLkQekYVbx/DdWB4CLdk6usM2ux0Vi2hMAAAAY1JREFUeJxtkmdDwjAQho8CsVYQoUDZFhEHIKAsUREHWnEg7oEK+P9/hMml1A7uA3d9nzdHLgmAES7B7fES4vW4BRc4Y0FcJEYsigs2LC35iCV8S5JluZ84wm9qshxwckICyzO+MpdTxwrnwRD9kMMWVyAs099QEA0RpkRBEWJ0xHicjhoTFIgyNcJ4Apck2SipNBPSKTZAEuUErTJYrdrPZRXlDICaxWrNblhDOatCDov1vN2Q30CQAxHzpvPsNxGIIGMnyWmQ8L9l2GJp28kBthnZAmxUmGcoIuKG0jxDiRt42nHyHX1pGXPFaaggKEMV8+6ene/tIqhCjV9f3W6oc70GjSavWqoZ77e42mwAtAk5ODwipHPcTZxg89OzTEd/F236fd4jvgvlEu9OYwbtyng3vXMm9Gl1fcPu5pb3vzMMfb7fASH3MBQeHk+44WnGB/psKj3UZ9MOhzovGvt+KRDy+vb+8WkxFF7+1+RHKA3NhpHlDWlf31bDT1ezndz4YjJVeKlMJ7/jmf4H0HIrIWAwTZgAAAAASUVORK5CYII="
+                />
+              </defs>
+              <style></style>
+              <use id="Layer 1" href="#img1" x="0" y="0" />
+              <use id="Background" href="#img2" x="0" y="0" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </main>
 
-  <footer class="footer">
-    <small class="copyright">&copy; Copyright 2022. All rights reserved.</small>
-    <a href="mailto:tim@gmail.com" class="email">delriotomas12@gmail.com</a>
-  </footer>
-
-</body>
-
+    <footer class="footer">
+      <small class="copyright"
+        >&copy; Copyright 2022. All rights reserved.</small
+      >
+      <a href="mailto:tim@gmail.com" class="email">delriotomas12@gmail.com</a>
+    </footer>
+  </body>
 </html>
